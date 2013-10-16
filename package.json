@@ -1,9 +1,16 @@
 {
   "name": "dont-commit-conflicts.hks",
+  "hook-module": {
+    "script-type": "node",
+    "valid-for": [
+      "pre-commit"
+    ]
+  },
   "devDependencies": {
     "node-hooks": "0.0.15",
     "beautify.hks": "0.0.1",
-    "esprima.hks": "0.0.0"
+    "esprima.hks": "0.0.0",
+    "should": "~2.0.1"
   },
   "version": "0.0.0",
   "description": "stop contributors from commiting conflicts",
@@ -11,7 +18,8 @@
   "dependencies": {
     "beautify.hks": "~0.0.1",
     "esprima.hks": "~0.0.0",
-    "node-hooks": "~0.0.15"
+    "node-hooks": "~0.0.15",
+    "colors": "~0.6.2"
   },
   "scripts": {
     "test": "mocha"
