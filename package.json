@@ -1,5 +1,6 @@
 {
   "name": "dont-commit-conflicts.hks",
+  "version": "0.0.0",
   "hook-module": {
     "script-type": "node",
     "valid-for": [
@@ -12,14 +13,11 @@
     "esprima.hks": "0.0.0",
     "should": "~2.0.1"
   },
-  "version": "0.0.0",
   "description": "stop contributors from commiting conflicts",
   "main": "index.js",
   "dependencies": {
-    "beautify.hks": "~0.0.1",
-    "esprima.hks": "~0.0.0",
-    "node-hooks": "~0.0.15",
-    "colors": "~0.6.2"
+    "colors": "~0.6.2",
+    "staged-git-files": "0.0.2"
   },
   "scripts": {
     "test": "mocha"
